@@ -8,4 +8,3 @@ const calculateArea = (b,h)=>{
 
 // 2, 3 are arguments 
 calculateArea(2,3)
- 
