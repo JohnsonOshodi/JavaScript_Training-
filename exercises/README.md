@@ -6,12 +6,12 @@ Please always make the best effort in tackling these challenges.
 ## Structure
 
 - Run the command git pull to get updated assignment folder, once an exercise is given.
-- Create a folder called Exercises on the root project folder, this folder would house all exercises.
-- Create a javaScript file for each exercise according to the exercice name; example `exercise1.2.js`
+- Create a folder called exercise-solution on the root project folder, this folder would house all exercises solutions.
+- Create a javaScript file for each solution according to the exercice name; example `exercise1.2.js`
 
 ## Timing
 
-- All exercises should be carried out within the stipulated time located at the top rigth hand corner of each assignment.
+- All exercises should be carried out within the stipulated time located at the top right hand corner of each assignment.
 - It is very important to stick to time to avaoid code concept non-reinforcement and overcome coding phobia.
 
 ## Ethics
@@ -21,4 +21,4 @@ Please always make the best effort in tackling these challenges.
 
 ## Tips
 
-While you solve these problems develop a problem solving framwork that help you the most in achieving success. Document the process and repeat. Happy coding.
+While you solve these problems develop a problem solving framework that helped you the most in achieving success. Document the process and repeat. Happy coding.
