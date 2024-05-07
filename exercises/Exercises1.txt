@@ -1,0 +1,33 @@
+EXERCISE 1                                                                  Submit on or before wed 8 may 2024.
+
+Please refer to the README.md file in the exercise folder for some instructions
+
+These exercises will help too strengthen you knowlwdge of string concatenation, function and calculations. 
+
+EXERCISE 1.0
+
+Modify the order summary to include the quantity and total price for each item.
+Update the order summary to display the subtotal, tax, and total order amount.
+Create a function to calculate the tax based on a given tax rate.
+
+EXERCISE 1.2
+
+Modify the getshippingAndHandling() function to accept a parameter for the shipping cost.
+Update the function to calculate the shipping cost based on the order total.
+Add an option to include expedited shipping with an additional fee.
+
+EXERCISE 1.3
+Modify the getTotalBeforeTax() function to accept the subtotal as a parameter.
+Update the function to calculate the total before tax and return the formatted string.
+Create a function to display the total before tax in the console.
+
+EXERCISE 1.4
+Modify the calculateEstimatedTax() function to accept the tax rate as a parameter.
+Update the function to calculate the estimated tax based on the provided tax rate and order total.
+Create a function to display the estimated tax in the console.
+
+EXERCISE 1.5
+
+Modify the calculateOrderTotal() function to accept the subtotal, tax, and any other applicable fees as parameters.
+Update the function to calculate the order total and return the formatted string.
+Create a function to display the order total in the console.
