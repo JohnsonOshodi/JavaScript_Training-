@@ -6,8 +6,9 @@ console.log('Items (' + (1 + 1) + '): $' + (2095 + 799) / 100,);
 
 //function for shipping & handling
 function getshippingAndHandling() {
-    return "Shipping & handling: $0.00";
+    return `Shipping & handling: $${shippingCost.toFixed(2)}`;
 }
+const shippingCost = 10.00; //Cost added for just purpose
 const shippingAndHandling = getshippingAndHandling();
 console.log(shippingAndHandling);
 
