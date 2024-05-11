@@ -1,0 +1,19 @@
+// print my name
+
+function printMyName() {
+  console.log('My name is Oshodi Samson Johnson');
+}
+
+
+printMyName();
+
+// write a brief about your Dad
+
+function writeAboutYourDad() {
+  console.log('My Dads Name is Abdul Gafar Saminu Oshodi, we call him AGS, he was a retired civil servant who later became a businessman, he died in the year 2005, he had four wives in which my mom was the last wife.');
+}
+
+writeAboutYourDad();
+
+
+
