@@ -1,19 +1,43 @@
 // print my name
 
-function printMyName() {
-  console.log('My name is Oshodi Samson Johnson');
-}
+// function printMyName() {
+//   console.log('My name is Oshodi Samson Johnson');
+// }
 
 
-printMyName();
+// printMyName();
 
 // write a brief about your Dad
 
-function writeAboutYourDad() {
-  console.log('My Dads Name is Abdul Gafar Saminu Oshodi, we call him AGS, he was a retired civil servant who later became a businessman, he died in the year 2005, he had four wives in which my mom was the last wife.');
+// function writeAboutYourDad() {
+//   console.log('My Dads Name is Abdul Gafar Saminu Oshodi, we call him AGS, he was a retired civil servant who later became a businessman, he died in the year 2005, he had four wives in which my mom was the last wife.');
+// }
+
+// writeAboutYourDad();
+
+//function the way it should be
+
+// function printMyName() {
+//   return "My name is Samson Oshodi";
+// }
+
+// console.log(printMyName());
+
+// function expression the proper one
+
+function printNamesAndAge(name, age, school) {
+  let schoolName;
+  if (name === "Michael") {
+    schoolName = 'Home lesson';
+  } else {
+    schoolName = school;
+  }
+  return `My name is ${name}. I am ${age} years old. I attend ${schoolName}.`;
 }
+  
 
-writeAboutYourDad();
+console.log(printNamesAndAge ("Michael", 15, 'schoolName'));
+console.log(printNamesAndAge ("Matthew", 9, 'Manuels school'));
+console.log(printNamesAndAge ("Mary", 6, 'Manuels school'));
 
-
-
+// check name age function
