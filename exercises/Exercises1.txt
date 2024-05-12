@@ -31,3 +31,117 @@ EXERCISE 1.5
 Modify the calculateOrderTotal() function to accept the subtotal, tax, and any other applicable fees as parameters.
 Update the function to calculate the order total and return the formatted string.
 Create a function to display the order total in the console.
+
+Certainly! Here are the answers to the questions:
+
+1. **Order Summary using Concatenation**:
+   - Modify the order summary to include the quantity and total price for each item.
+     ```javascript
+     'Items (' + (1 + 1) + '): $' + ((2095 + 799) / 100).toFixed(2)
+     ```
+   - Update the order summary to display the subtotal, tax, and total order amount.
+     ```javascript
+     'Subtotal: $' + ((2095 + 799) / 100).toFixed(2) + '\nTax: $2.89\nTotal: $31.83'
+     ```
+   - Create a function to calculate the tax based on a given tax rate.
+     ```javascript
+     function calculateTax(subtotal, taxRate) {
+       return subtotal * taxRate;
+     }
+     ```
+
+2. **Shipping and Handling**:
+   - Modify the `getshippingAndHandling()` function to accept a parameter for the shipping cost.
+     ```javascript
+     function getshippingAndHandling(shippingCost) {
+       return `Shipping & handling: $${shippingCost.toFixed(2)}`;
+     }
+     ```
+   - Update the function to calculate the shipping cost based on the order total.
+     ```javascript
+     function getshippingAndHandling(orderTotal) {
+       let shippingCost = 0;
+       if (orderTotal < 50) {
+         shippingCost = 5.99;
+       } else {
+         shippingCost = 0;
+       }
+       return `Shipping & handling: $${shippingCost.toFixed(2)}`;
+     }
+     ```
+   - Add an option to include expedited shipping with an additional fee.
+     ```javascript
+     function getshippingAndHandling(orderTotal, expedited) {
+       let shippingCost = 0;
+       if (orderTotal < 50) {
+         shippingCost = expedited ? 9.99 : 5.99;
+       } else {
+         shippingCost = 0;
+       }
+       return `Shipping & handling: $${shippingCost.toFixed(2)}`;
+     }
+     ```
+
+3. **Total Before Tax**:
+   - Modify the `getTotalBeforeTax()` function to accept the subtotal as a parameter.
+     ```javascript
+     function getTotalBeforeTax(subtotal) {
+       return `Total before tax: $${subtotal.toFixed(2)}`;
+     }
+     ```
+   - Update the function to calculate the total before tax and return the formatted string.
+     ```javascript
+     function getTotalBeforeTax(subtotal) {
+       return `Total before tax: $${subtotal.toFixed(2)}`;
+     }
+     ```
+   - Create a function to display the total before tax in the console.
+     ```javascript
+     function displayTotalBeforeTax(subtotal) {
+       console.log(getTotalBeforeTax(subtotal));
+     }
+     ```
+
+4. **Estimated Tax**:
+   - Modify the `calculateEstimatedTax()` function to accept the tax rate as a parameter.
+     ```javascript
+     function calculateEstimatedTax(totalAmount, taxRate) {
+       const estimatedTax = totalAmount * taxRate;
+       return `Estimated tax (${(taxRate * 100).toFixed(0)}%) : $${estimatedTax.toFixed(2)}`;
+     }
+     ```
+   - Update the function to calculate the estimated tax based on the provided tax rate and order total.
+     ```javascript
+     function calculateEstimatedTax(totalAmount, taxRate) {
+       const estimatedTax = totalAmount * taxRate;
+       return `Estimated tax (${(taxRate * 100).toFixed(0)}%) : $${estimatedTax.toFixed(2)}`;
+     }
+     ```
+   - Create a function to display the estimated tax in the console.
+     ```javascript
+     function displayEstimatedTax(totalAmount, taxRate) {
+       console.log(calculateEstimatedTax(totalAmount, taxRate));
+     }
+     ```
+
+5. **Order Total**:
+   - Modify the `calculateOrderTotal()` function to accept the subtotal, tax, and any other applicable fees as parameters.
+     ```javascript
+     function calculateOrderTotal(subtotal, tax, fees) {
+       const orderTotal = subtotal + tax + fees;
+       return `Order total: $${orderTotal.toFixed(2)}`;
+     }
+     ```
+   - Update the function to calculate the order total and return the formatted string.
+     ```javascript
+     function calculateOrderTotal(subtotal, tax, fees) {
+       const orderTotal = subtotal + tax + fees;
+       return `Order total: $${orderTotal.toFixed(2)}`;
+     }
+     ```
+   - Create a function to display the order total in the console.
+     ```javascript
+     function displayOrderTotal(subtotal, tax, fees) {
+       console.log(calculateOrderTotal(subtotal, tax, fees));
+     }
+     ```
