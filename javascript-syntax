@@ -25,19 +25,31 @@
 
 // function expression the proper one
 
-function printNamesAndAge(name, age, school) {
-  let schoolName;
-  if (name === "Michael") {
-    schoolName = 'Home lesson';
-  } else {
-    schoolName = school;
-  }
-  return `My name is ${name}. I am ${age} years old. I attend ${schoolName}.`;
+// function printNamesAndAge(name, age, school) {
+//   let schoolName;
+//   if (name === "Michael") {
+//     schoolName = 'Home lesson';
+//   } else {
+//     schoolName = school;
+//   }
+//   return `My name is ${name}. I am ${age} years old. I attend ${schoolName}.`;
+// }
+   
+
+// console.log(printNamesAndAge ("Michael", 15, 'schoolName'));
+// console.log(printNamesAndAge ("Matthew", 9, 'Manuels school'));
+// console.log(printNamesAndAge ("Mary", 6, 'Manuels school'));
+
+// function that returns another function
+
+function createGreeter(greeting) {
+  return function(name) {
+      console.log(`${greeting}, ${name}!`);
+  };
 }
-  
 
-console.log(printNamesAndAge ("Michael", 15, 'schoolName'));
-console.log(printNamesAndAge ("Matthew", 9, 'Manuels school'));
-console.log(printNamesAndAge ("Mary", 6, 'Manuels school'));
+const greetMorning = createGreeter("Good Morning");
+const greetAfternoon = createGreeter("Good Afternoon");
 
-// check name age function
+greetMorning("Michael");
+greetAfternoon("Matthew");
