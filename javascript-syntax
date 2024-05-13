@@ -47,6 +47,8 @@ function createGreeter(greeting) {
       console.log(`${greeting}, ${name}!`);
   };
 }
+//This looks cool, please also implement this. 
+Create two functions one checks if the person is vip or regular and return another function that will greet the customer. Welldone
 
 const greetMorning = createGreeter("Good Morning");
 const greetAfternoon = createGreeter("Good Afternoon");
