@@ -42,14 +42,42 @@
 
 // function that returns another function
 
-function createGreeter(greeting) {
-  return function(name) {
-      console.log(`${greeting}, ${name}!`);
-  };
+// function createGreeter(greeting) {
+//   return function(name) {
+//       console.log(`${greeting}, ${name}!`);
+//   };
+// }
+
+// const greetMorning = createGreeter("Good Morning");
+// const greetAfternoon = createGreeter("Good Afternoon");
+
+// greetMorning("Michael");
+// greetAfternoon("Matthew");
+
+
+
+// function to check if person is vip or regular
+
+function checkCustomerType(customer) {
+  if (customer === 'VIP') {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-const greetMorning = createGreeter("Good Morning");
-const greetAfternoon = createGreeter("Good Afternoon");
+function  createGreeter(customerType) {
+  if (customerType === 'VIP') {
+    return function (name) {
+      console.log(`Welcome VIP ${name}, we are pleased to have you.`);
+    };
+  }else{
+    return function(name) {
+      console.log(`Hello ${name}, Welcome to our store.`);
+    };
+  }
+}
 
-greetMorning("Michael");
-greetAfternoon("Matthew");
+const customerType = checkCustomerType('VIP') ? 'VIP' : 'regular';
+const greetCustomer = createGreeter(customerType);
+greetCustomer('MIchael');
