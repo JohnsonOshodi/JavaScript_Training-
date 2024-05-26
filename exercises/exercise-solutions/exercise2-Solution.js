@@ -6,7 +6,6 @@
 
 //   // weekday names
 //   const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  
 
 //   // current day of the week
 //   const dayName = daysOfWeek[today.getDay()];
@@ -18,7 +17,7 @@
 
 //   // AM or PM
 //   const amOrPm = hour >= 12 ? 'PM' : 'AM';
-  
+
 //   // convert hours from 24-hour format to 12-hour format
 
 //   hour = hour % 12;
@@ -36,25 +35,39 @@
 
 // }
 
-
 // displayCurrentDayAndTime();
-
 
 //Exercise 2B Solution
 function rotateStringRight(str) {
-   let charArray = str.split('');
+  let charArray = str.split("");
 
-   function rotateOnce() {
+  function rotateOnce() {
     let lastChar = charArray.pop();
 
     charArray.unshift(lastChar);
 
-    console.log(charArray.join(''));
-   }
+    console.log(charArray.join(""));
+  }
 
-   // rotate the string every 1 second
-   setInterval(rotateOnce, 1000);
+  // rotate the string every 1 second
+  setInterval(rotateOnce, 1000);
 }
 
-rotateStringRight('w3resourse');
+rotateStringRight("w3resourse");
 
+const currentDate = new Date();
+
+// get different parts of the date
+const year = currentDate.getFullYear();
+
+const month = currentDate.getMonth() + 1;
+
+const day = currentDate.getDate();
+
+// format the date as a string
+const formattedMonth = month <= 9 ? month.toString().padStart(2, "0") : month;
+
+const formattedDate = `${year}-${formattedMonth}-${day}`;
+
+console.log(`current Date: ${formattedDate}`);
+console.log(typeof month);
