@@ -1,4 +1,4 @@
-//Write a JavaScript program to display the current day and time in the following format.
+/* //Write a JavaScript program to display the current day and time in the following format.
 
 //  current date and time
 // function displayCurrentDayAndTime() {
@@ -71,3 +71,25 @@ const formattedDate = `${year}-${formattedMonth}-${day}`;
 
 console.log(`current Date: ${formattedDate}`);
 console.log(typeof month);
+ */
+//Calculator overwiew
+const operations = ["+", "-", "*", "/"];
+
+const frontend = "2+4";
+let result = 0;
+
+const getcurrentOperations = () => {
+  return operations.filter((operation) => frontend.includes(operation));
+};
+const currentOperation = getcurrentOperations();
+const addNumbers = () => {
+  console.log(operations, currentOperation, frontend);
+  if (!frontend) return console.log("enter an operation");
+  if (currentOperation[0] === "+") {
+    const sum = eval(frontend);
+    result += sum;
+  }
+  console.log(result);
+};
+
+console.log(addNumbers(2, -4));
