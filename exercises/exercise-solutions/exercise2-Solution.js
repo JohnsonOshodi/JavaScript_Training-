@@ -38,36 +38,40 @@
 // displayCurrentDayAndTime();
 
 //Exercise 2B Solution
-function rotateStringRight(str) {
-  let charArray = str.split("");
+// function rotateStringRight(str) {
+//   let charArray = str.split("");
 
-  function rotateOnce() {
-    let lastChar = charArray.pop();
+//   function rotateOnce() {
+//     let lastChar = charArray.pop();
 
-    charArray.unshift(lastChar);
+//     charArray.unshift(lastChar);
 
-    console.log(charArray.join(""));
-  }
+//     console.log(charArray.join(""));
+//   }
 
-  // rotate the string every 1 second
-  setInterval(rotateOnce, 1000);
-}
+//   // rotate the string every 1 second
+//   setInterval(rotateOnce, 1000);
+// }
 
-rotateStringRight("w3resourse");
+// rotateStringRight("w3resourse");
 
-const currentDate = new Date();
+// const currentDate = new Date();
 
-// get different parts of the date
-const year = currentDate.getFullYear();
+// // get different parts of the date
+// const year = currentDate.getFullYear();
 
-const month = currentDate.getMonth() + 1;
+// const month = currentDate.getMonth() + 1;
 
-const day = currentDate.getDate();
+// const day = currentDate.getDate();
 
-// format the date as a string
-const formattedMonth = month <= 9 ? month.toString().padStart(2, "0") : month;
+// // format the date as a string
+// const formattedMonth = month <= 9 ? month.toString().padStart(2, "0") : month;
 
-const formattedDate = `${year}-${formattedMonth}-${day}`;
+// const formattedDate = `${year}-${formattedMonth}-${day}`;
 
-console.log(`current Date: ${formattedDate}`);
-console.log(typeof month);
+// console.log(`current Date: ${formattedDate}`);
+// console.log(typeof month);
+
+//Exercise 2C Solution
+// Question: Write a JavaScript program to calculate multiplication and division of two numbers (input from the user).  
+
