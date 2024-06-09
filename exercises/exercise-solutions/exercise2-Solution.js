@@ -1,4 +1,4 @@
-//Write a JavaScript program to display the current day and time in the following format.
+/* //Write a JavaScript program to display the current day and time in the following format.
 
 //  current date and time
 // function displayCurrentDayAndTime() {
@@ -69,9 +69,5 @@
 
 // const formattedDate = `${year}-${formattedMonth}-${day}`;
 
-// console.log(`current Date: ${formattedDate}`);
-// console.log(typeof month);
-
-//Exercise 2C Solution
-// Question: Write a JavaScript program to calculate multiplication and division of two numbers (input from the user).  
-
+console.log(`current Date: ${formattedDate}`);
+console.log(typeof month);
