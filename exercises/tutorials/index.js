@@ -33,6 +33,11 @@ const registerCatholicStudents = (
   } else {
     return "This is a specialized school for catholic students";
   }
+  if (gender !== "Male" || age < 12) {
+    return "only male students who are 12 years old and above can be registered";
+  }
+  return registerStudent(name, age, gender, className);
+
 };
 
 // Example usage
@@ -45,5 +50,10 @@ console.log(
 console.log(
   registerCatholicStudents("catholic", "John", 14, "Male", "History")
 ); // denomitionation is undefined
+
+console.log(
+  registerCatholicStudents("catholic", "Faith", 10, "Female", "Geography")
+); // only male  students who are 12 years old and above can be registered
+
 
 console.log(stPeterSeminaryStudents);
