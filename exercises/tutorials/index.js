@@ -28,13 +28,9 @@ const registerCatholicStudents = (
   className
 ) => {
   if (!denomination) return "What is your denomination?";
-  if (denomination === "catholic") {
-    return registerStudent(name, age, gender, className);
-  } else {
-    return "This is a specialized school for catholic students";
-  }
+  if (denomination !== "catholic")  return "This is a specialized school for catholic students"; /*you dont have to check if they are catholic, check for the opposite.*/ 
   if (gender !== "Male" || age < 12) {
-    return "only male students who are 12 years old and above can be registered";
+    return "Only male students who are 12 years old and above can be registered";
   }
   return registerStudent(name, age, gender, className);
 
@@ -57,3 +53,12 @@ console.log(
 
 
 console.log(stPeterSeminaryStudents);
+
+//try and solve this too 
+/*  Create a system to register books in a library. The system should allow adding books, but only if they meet certain criteria.
+Requirements
+1. Check if the book is a fiction or non-fiction.
+2. Only register non-fiction books.
+3. Only register books with more than 100 pages.
+4. Log the registration details to the console.
+*/
