@@ -1,3 +1,13 @@
+
+//try and solve this too 
+/*  Create a system to register books in a library. The system should allow adding books, but only if they meet certain criteria.
+Requirements
+1. Check if the book is a fiction or non-fiction.
+2. Only register non-fiction books.
+3. Only register books with more than 100 pages.
+4. Log the registration details to the console.
+*/
+
 class Book {
     constructor(title, author, genre, pages) {
         this.title = title;
