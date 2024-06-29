@@ -144,4 +144,7 @@ Certainly! Here are the answers to the questions:
      function displayOrderTotal(subtotal, tax, fees) {
        console.log(calculateOrderTotal(subtotal, tax, fees));
      }
-     ```
+     
+
+     6. Write a JavaScript function to check whether an `input` is an array or not.
+     

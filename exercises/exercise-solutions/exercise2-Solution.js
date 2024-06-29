@@ -1,4 +1,4 @@
-/* //Write a JavaScript program to display the current day and time in the following format.
+//Write a JavaScript program to display the current day and time in the following format.
 
 //  current date and time
 // function displayCurrentDayAndTime() {
@@ -69,5 +69,5 @@
 
 // const formattedDate = `${year}-${formattedMonth}-${day}`;
 
-console.log(`current Date: ${formattedDate}`);
-console.log(typeof month);
+//console.log(`current Date: ${formattedDate}`);
+//console.log(typeof month);
